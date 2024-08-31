@@ -7,14 +7,16 @@ int main(){
     int N, K;
     cin >> N;
     cin >> K;
+    if(N >= 1 && N <= 100 && K  >= 1 && K <= 1000 && K >= N){
 
-    if(N == 1){
-        cout << K;
-    }
-    else{
-        int Interval = K - N;
-        int Total = Interval / N;
-        cout << Total;
+        if(N == 1){
+            cout << K;
+        }
+        else{
+            int Interval = K - N;
+            int Total = Interval / N;
+            cout << Total;
+        }
     }
     return 0;
 }
