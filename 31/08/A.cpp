@@ -13,7 +13,7 @@ int main(){
             cout << K;
         }
         else{
-            int Interval = K - N;
+            int Interval = K - (N - 1);
             int Total = Interval / N;
             cout << Total;
         }
